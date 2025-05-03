@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .previous-button {
+           position: absolute;
+           background-color: #4CAF50;
+           color: white;
+           padding: 10px 20px;
+           border: none;
+           border-radius: 4px;
+           top: 10px;
+           left: 10px;
+           cursor: pointer;
+           font-size: 16px;
+       }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <a class="previous-button" href="teacherp.php">&lt; Previous</a><br><br><br>
+    <h2>Student Attendance</h2>
+    <form method="POST" action="attendance.php">
+        <label>Branch:</label>
+        <input type="text" name="branch" placeholder="CAPS ONLY"required>
+        <br>
+        <label>Year:</label>
+        <input type="text" name="year" placeholder="format: 1st year"required>
+        <br>
+        <input type="submit" name="submit" value="GO">
+    </form>
+</body>
+</html>

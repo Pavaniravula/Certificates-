@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        .main {
+            width: 400px;
+            background-color: #5882dd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 50px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        aside {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 200px;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        
+        #submit,
+        #reset {
+            padding: 8px 15px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+        #reset {
+            background-color: #f44336;
+            margin-left: 10px;
+        }
+        
+        #submit:hover,
+        #reset:hover {
+            background-color: #45a049;
+        }
+.previous-button {       
+                position: absolute;
+              background-color:blue ;
+              color: white;
+              padding: 7px 7px;
+              border:none;
+              border-radius: 5px;
+              cursor: pointer;
+              top: 6px;
+              left:6px;
+              text-size:10px
+            }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Registration Form</h1>
+        <div class="main">
+            <div class="register">
+                <form id="register" method="POST" action="reg.php">
+                    <h2>Register Here</h2>
+                    <label>First Name:</label>
+                    <input type="text" name="fname" id="name"><br><br>
+                    <label>Last Name:</label>
+                    <input type="text" name="lname" id="name"><br><br>
+                    <label>Hallticket:</label>
+                    <input type="text" name="hallticket" id="hallticket"><br><br>
+                    <label>Email:</label>
+                    <input type="email" name="email" id="name"><br><br>
+                    <label>Password:</label>
+                    <input type="text" name="pas" id="name"><br><br>
+                    <label>Date of Birth:</label>
+                    <input type="date" name="dob" id="dob"><br><br>
+                    <label>Gender:</label>
+                    <select name="gender">
+                        <option value="select" selected>select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select><br><br>
+                    <label>Address:</label>
+                    <input type="text" name="ad1" id="name"><br><br>
+                    <label>Btech year:</label>
+                    <select name="yr">
+                        <option value="select" selected>select</option>
+                        <option value="1st year">1st year</option>
+                        <option value="2nd year">2nd year</option>
+                        <option value="3rd year">3rd year</option>
+                        <option value="4th year">4th year</option>
+                    </select><br><br>
+                    <label>Branch:</label>
+                    <select name="br">
+                        <option value="select" selected>select</option>
+                        <option value="CSM">CSM</option>
+                        <option value="CSE">CSE</option>
+                        <option value="CSO">CSO</option>
+                        <option value="CSW">CSW</option>
+                        <option value="CE">CE</option>
+                        <option value="ME">ME</option>
+                        <option value="ECE">ECE</option>
+                    </select><br><br>
+                    <label>Phone Number:</label>
+                    <input type="number" name="phno" id="name"><br><br>
+                    <label>Create a user ID:</label>
+                    <input type="text" name="user_id" id="user_id" placeholder="for other cases"><br><br>
+                    <input type="submit" value="Submit" name="submit" id="submit">
+                    <br><br>
+                    <input type="reset" name="clear" id="reset">
+                    <a class="previous-button" href="index.html">&laquo; Previous</a>
+                </form>
+            </div>
+        </div>
+        <aside>
+            <h3>Additional Information</h3>
+            <p>Advantages of Getting Registered in our Learning Management System:</p>
+            <ul>
+                <li><strong>Access to Learning Resources:</strong> As a registered user, you will have access to a wide range of learning resources, including course materials, lecture notes, assignments, and additional educational materials. This will enhance your learning experience and provide you with valuable resources to support your studies.</li><br><br>
+                <li><strong>Interactive Learning Experience:</strong> Our learning management system offers interactive features such as discussion forums, Query clarification. By registering, you can actively participate in discussions, collaborate with fellow students, and engage with instructors, fostering a dynamic and engaging learning experience.</li><br><br>
+                <li><strong>Track Your Progress:</strong> Registering in our learning management system allows you to track your progress throughout your courses. You can easily access your grades, monitor your performance, and identify areas where you need improvement. This helps you stay organized and motivated as you work towards your educational goals.</li><br><br>
+                <li><strong>Flexibility and Convenience:</strong> By having a registered account, you can enjoy the flexibility of accessing course materials and participating in learning activities at your own convenience. Whether you prefer to study during the day or evening, from home or on the go, our learning management system offers you the flexibility to learn on your terms.</li><br><br>
+                <li><strong>Stay Updated:</strong> As a registered user, you will receive important updates, notifications, and announcements regarding your courses and the learning platform. This ensures that you stay informed about any changes, deadlines, or upcoming events, helping you stay on top of your educational journey.</li>
+            </ul>
+        </aside>
+    </center>
+</body>
+</html>
