@@ -1,16 +1,16 @@
-# AI-Based Video Dubbing - Project Documentation
-# Overview
+AI-Based Video Dubbing - Project Documentation
+Overview
 This project is a Multilingual AI Video Dubbing Web Application that automates the process of dubbing videos into multiple languages using speech recognition, translation, and text-to-speech synthesis. Built with Python and Flask, the app enables users to upload a video, convert the spoken language to text, translate it into a target language, and generate a dubbed version of the video with the new voiceover.
-# Key Features:
+Key Features
 Automatic speech recognition (ASR) from input video
 Language detection and translation
 AI-generated voice dubbing using TTS (Text-to-Speech)
 Multilingual support (e.g., English, Hindi, Telugu, etc.)
 Web-based interface for easy access
-# Directory Structure
-. php
-. Copy code
-. video-dubbing-ai/
+Directory Structure
+php
+Copy code
+video-dubbing-ai/
 │
 ├── app/
 │   ├── static/                # CSS, JS, image assets
@@ -26,20 +26,20 @@ Web-based interface for easy access
 ├── requirements.txt           # Python dependencies
 ├── run.py                     # Entry point for running the Flask app
 └── README.md                  # Project documentation
-# Getting Started
-# Prerequisites
- . Python 3.8 or above
- . pip (Python package manager)
- . Virtual Environment 
- . Stable Internet Connection
-# Installation
+Getting Started
+Prerequisites
+Python 3.8 or above
+pip (Python package manager)
+Virtual Environment 
+Stable Internet Connection
+Installation
 1.Clone the repository
 git clone <repository-url>
 2.Navigate to the Project Directory
 cd video-dubbing-ai
 3.Install the Required Packages
 pip install -r requirements.txt
-# Usage
+Usage
 To use the AI-based video dubbing application, first launch the Flask server by running `python run.py` in your terminal. Once the server is running, open your browser and navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000). Through the web interface, you can upload a video, automatically detect and transcribe the speech, translate it into the desired language, and generate a dubbed version of the video using AI.
 
 
