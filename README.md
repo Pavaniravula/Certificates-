@@ -34,26 +34,14 @@ video-dubbing-ai/
 - Stable Internet Connection
 # Installation
 - Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/video-dubbing-ai.git
+* git clone <https://github.com/your-username/video-dubbing-ai.git>
 cd video-dubbing-ai
 - Set Up a Virtual Environment (Recommended)
-bash
-Copy
-Edit
 python -m venv venv
 source venv/bin/activate        # On Windows: venv\Scripts\activate
 - Install Dependencies
-bash
-Copy
-Edit
 pip install -r requirements.txt
 - Run the Application
-bash
-Copy
-Edit
 python run.py
 # Usage
 To use the AI-based video dubbing application, first launch the Flask server by running `python run.py` in your terminal. Once the server is running, open your browser and navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000). Through the web interface, you can upload a video, automatically detect and transcribe the speech, translate it into the desired language, and generate a dubbed version of the video using AI.
